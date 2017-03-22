@@ -222,7 +222,7 @@
     background-color: #FF8F5E;
     background-position: center top;
     margin-top: -100px;
-    min-height: 600px;
+    min-height: 800px;
 }
 .demo-header-image{
     background-image: url('../paper_img/intro-bg.jpg');
@@ -1294,12 +1294,41 @@ pre.prettyprint{
   .timeline > li .timeline-image {
     width: 170px;
     height: 170px;
-    margin-left: -105px;
+    margin-left: -85px;
   }
   .timeline > li .timeline-image h4 {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-custom.affix {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
   }
 }
